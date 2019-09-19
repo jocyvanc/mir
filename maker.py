@@ -4,7 +4,7 @@ import pyautogui, os, json
 data = {'stream': {}, 'triggerable': {}}
 current = set()
 pos1, pos2 = None, None
-sscount = 1
+sscount = 0
 streamid = 1
 triggerableid = 1
 
@@ -60,10 +60,10 @@ def on_release(key):
 
 def screenshot():
   global sscount
+  sscount = sscount + 1
 
   ss = pyautogui.screenshot(region=(pos1.x, pos1.y, pos2.x - pos1.x, pos2.y - pos1.y))
   ss.save("ss%d.png" % sscount)
-  sscount = sscount + 1
 
 def locate():
   clear()
