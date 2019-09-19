@@ -1,0 +1,1 @@
+{"stream": {"1": {"type": "LO", "img": "ss1.png", "area": {"x": 2468, "y": 1007, "w": 91, "h": 72}, "trigger": "2"}}, "triggerable": {"1": {"type": "LO", "img": "ss1.png", "area": {"x": 2462, "y": 1003, "w": 97, "h": 76}, "trigger": "ZX1"}, "2": {"type": "CL", "point": {"x": 1660, "y": 45}}}}
